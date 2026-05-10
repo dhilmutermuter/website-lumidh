@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <!-- ============================================================
+       META & HEAD
+  ============================================================ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Lumidh — Fashion & Fragrance premium yang merayakan keheningan dan keanggunan sejati." />
+  <title>Lumidh — Fashion &amp; Fragrance</title>
+
+  <!-- Bootstrap 5.3 CSS via jsDelivr -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+
+  <!-- Bootstrap Icons via jsDelivr -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+  />
+
+  <!-- Google Fonts: Cormorant Garamond (display, 2 weights) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR — sticky-top, transparan → putih saat scroll
+  ============================================================ -->
+  <header>
+    <nav
+      id="mainNavbar"
+      class="navbar navbar-expand-lg sticky-top"
+      aria-label="Navigasi utama Lumidh"
+    >
+      <div class="container">
+
+        <!-- Logo teks -->
+        <a class="navbar-brand lumidh-brand" href="#beranda" aria-label="Lumidh — beranda">
+          Lumidh
+        </a>
+
+        <!-- Hamburger -->
+        <button
+          class="navbar-toggler lumidh-toggler border-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+          aria-controls="navMenu"
+          aria-expanded="false"
+          aria-label="Buka atau tutup menu"
+        >
+          <span class="toggler-bar"></span>
+          <span class="toggler-bar"></span>
+        </button>
+
+        <!-- Nav links -->
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item">
+              <a class="nav-link lmh-link" href="#beranda">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link lmh-link" href="#koleksi">Koleksi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link lmh-link" href="#cerita">Cerita</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link lmh-link" href="#kontak">Kontak</a>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+  </header>
+
+  <!-- ============================================================
+       MAIN CONTENT
+  ============================================================ -->
+  <main id="main-content">
+
+    <!-- ----------------------------------------------------------
+         HERO SECTION
+    ---------------------------------------------------------- -->
+    <section
+      id="beranda"
+      class="hero-section"
+      aria-label="Hero: Lumidh Fashion &amp; Fragrance"
+    >
+      <!-- Dekoratif: garis tipis diagonal -->
+      <div class="hero-rule" aria-hidden="true"></div>
+
+      <div class="container hero-container">
+        <div class="row align-items-center min-vh-100">
+
+          <!-- Teks hero -->
+          <div class="col-lg-6 hero-text-col">
+            <p class="hero-eyebrow">Fashion &amp; Fragrance — 2025</p>
+            <h1 class="hero-heading">
+              Keheningan<br />
+              yang Berbicara<br />
+              <em>Sendiri.</em>
+            </h1>
+            <p class="hero-sub mt-4">
+              Lumidh menghadirkan koleksi pakaian dan aroma premium
+              untuk mereka yang menemukan kekuatan dalam ketenangan.
+            </p>
+            <a href="#koleksi" class="btn lmh-btn-primary mt-5" role="button">
+              Jelajahi Koleksi
+            </a>
+          </div>
+
+          <!-- Gambar hero -->
+          <div class="col-lg-6 hero-img-col mt-5 mt-lg-0">
+            <div class="hero-img-frame">
+              <img
+                src="https://placehold.co/800x600?text=Lumidh+Collection"
+                alt="Model mengenakan koleksi Lumidh terbaru"
+                class="hero-img"
+                width="800"
+                height="600"
+                loading="eager"
+              />
+              <!-- Label melayang -->
+              <div class="hero-img-badge" aria-hidden="true">
+                <span>New Arrival</span>
+                <span class="badge-year">SS 2025</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------
+         BRAND STRIP — kalimat singkat pemisah
+    ---------------------------------------------------------- -->
+    <div class="brand-strip" aria-hidden="true">
+      <div class="container">
+        <p class="brand-strip-text">
+          <span>Dibuat dengan niat.</span>
+          <span class="strip-dot">·</span>
+          <span>Dikenakan dengan kepercayaan.</span>
+          <span class="strip-dot">·</span>
+          <span>Dirasakan dengan sepenuh hati.</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- ----------------------------------------------------------
+         BRAND STORY SECTION — 2 kolom: teks + gambar
+    ---------------------------------------------------------- -->
+    <section
+      id="cerita"
+      class="story-section"
+      aria-labelledby="story-heading"
+    >
+      <div class="container">
+        <div class="row align-items-center g-5">
+
+          <!-- Gambar -->
+          <div class="col-lg-5 order-lg-1 order-2">
+            <div class="story-img-wrap">
+              <img
+                src="https://placehold.co/800x600?text=Lumidh+Story"
+                alt="Detail kain koleksi Lumidh yang halus dan bertekstur"
+                class="story-img"
+                width="800"
+                height="600"
+                loading="lazy"
+              />
+              <!-- Ornamen angka -->
+              <div class="story-year" aria-hidden="true">2018</div>
+            </div>
+          </div>
+
+          <!-- Teks -->
+          <div class="col-lg-7 order-lg-2 order-1">
+            <span class="section-label">Tentang Kami</span>
+            <h2 id="story-heading" class="section-title mt-3">
+              Didirikan atas Kepercayaan<br />pada Kesederhanaan
+            </h2>
+            <p class="body-text mt-4">
+              Lumidh lahir dari keyakinan bahwa keanggunan tidak perlu berteriak.
+              Sejak 2018, kami merancang setiap helai kain dan setiap tetes parfum
+              dengan presisi yang tumbuh dari rasa hormat mendalam terhadap bahan
+              baku pilihan dan pengrajin lokal.
+            </p>
+            <p class="body-text mt-3">
+              Koleksi kami bukan sekadar produk — ia adalah sikap.
+              Pilihan untuk tampil tenang, tahan waktu, dan sungguh-sungguh diri sendiri.
+            </p>
+            <a href="#koleksi" class="lmh-text-link mt-5 d-inline-flex align-items-center gap-2">
+              Lihat Koleksi Kami
+              <i class="bi bi-arrow-right" aria-hidden="true"></i>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------------------------------------------
+         KOLEKSI SECTION — Fashion (3 card) + Perfumery (3 card)
+    ---------------------------------------------------------- -->
+    <section
+      id="koleksi"
+      class="collection-section"
+      aria-labelledby="koleksi-heading"
+    >
+      <div class="container">
+
+        <!-- Section header -->
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-6">
+            <span class="section-label">Koleksi</span>
+            <h2 id="koleksi-heading" class="section-title mt-3">
+              Dua Bahasa,<br />Satu Identitas
+            </h2>
+          </div>
+        </div>
+
+        <!-- ---- KATEGORI 1: FASHION ---- -->
+        <div class="category-block mt-5">
+          <h3 class="category-label">
+            <span class="cat-number" aria-hidden="true">01</span>
+            Fashion
+          </h3>
+          <div class="row g-4 mt-2">
+
+            <!-- Card Fashion 1 -->
+            <div class="col-sm-6 col-lg-4">
+              <article class="product-card" aria-label="Produk: Outer Linen Heather">
+                <div class="product-card-img-wrap">
+                  <img
+                    src="https://placehold.co/800x600?text=Lumidh+Fashion+1"
+                    alt="Outer linen abu terang koleksi Lumidh musim panas"
+                    class="product-card-img"
+                    width="800"
+                    height="600"
+                    loading="lazy"
+                  />
+                  <div class="product-card-overlay">
+                    <a href="#kontak" class="btn lmh-btn-ghost" role="button">Lihat Detail</a>
+                  </div>
+                </div>
+                <div class="product-card-body">
+                  <p class="product-category">Fashion</p>
+                  <h4 class="product-name">Outer Linen Heather</h4>
+                  <p class="product-price">Rp 1.850.000</p>
+                </div>
+              </article>
+            </div>
+
+            <!-- Card Fashion 2 -->
+            <div class="col-sm-6 col-lg-4">
+              <article class="product-card" aria-label="Produk: Dress Void Ivory">
+                <div class="product-card-img-wrap">
+                  <img
+                    src="https://placehold.co/800x600?text=Lumidh+Fashion+2"
+                    alt="Dress ivory longline koleksi Lumidh elegan"
+                    class="product-card-img"
+                    width="800"
+                    height="600"
+                    loading="lazy"
+                  />
+                  <div class="product-card-overlay">
+                    <a href="#kontak" class="btn lmh-btn-ghost" role="button">Lihat Detail</a>
+                  </div>
+                </div>
+                <div class="product-card-body">
+                  <p class="product-category">Fashion</p>
+                  <h4 class="product-name">Dress Void Ivory</h4>
+                  <p class="product-price">Rp 2.290.000</p>
+                </div>
+              </article>
+            </div>
+
+            <!-- Card Fashion 3 -->
+            <div class="col-sm-6 col-lg-4">
+              <article class="product-card" aria-label="Produk: Trousers Still Stone">
+                <div class="product-card-img-wrap">
+                  <img
+                    src="https://placehold.co/800x600?text=Lumidh+Fashion+3"
+                    alt="Celana panjang bahan wol abu batu koleksi Lumidh"
+                    class="product-card-img"
+                    width="800"
+                    height="600"
+                    loading="lazy"
+                  />
+                  <div class="product-card-overlay">
+                    <a href="#kontak" class="btn lmh-btn-ghost" role="button">Lihat Detail</a>
+                  </div>
+                </div>
+                <div class="product-card-body">
+                  <p class="product-category">Fashion</p>
+                  <h4 class="product-name">Trousers Still Stone</h4>
+                  <p class="product-price">Rp 1.490.000</p>
+                </div>
+              </article>
+            </div>
+
+          </div><!-- /row fashion -->
+        </div><!-- /category-block fashion -->
+
+        <!-- PEMISAH TIPIS -->
+        <hr class="category-divider" aria-hidden="true" />
+
+        <!-- ---- KATEGORI 2: PERFUMERY ---- -->
+        <div class="category-block">
+          <h3 class="category-label">
+            <span class="cat-number" aria-hidden="true">02</span>
+            Perfumery
+          </h3>
+          <div class="row g-4 mt-2">
+
+            <!-- Card Perfumery 1 -->
+            <div class="col-sm-6 col-lg-4">
+              <article class="product-card" aria-label="Produk: Eau de Parfum Silence">
+                <div class="product-card-img-wrap">
+                  <img
+                    src="https://placehold.co/800x600?text=Lumidh+Perfume+1"
+                    alt="Botol parfum Silence 50ml dari koleksi Lumidh Fragrance"
+                    class="product-card-img"
+                    width="800"
+                    height="600"
+                    loading="lazy"
+                  />
+                  <div class="product-card-overlay">
+                    <a href="#kontak" class="btn lmh-btn-ghost" role="button">Lihat Detail</a>
+                  </div>
+                </div>
+                <div class="product-card-body">
+                  <p class="product-category">Perfumery</p>
+                  <h4 class="product-name">Silence EdP 50ml</h4>
+                  <p class="product-price">Rp 1.650.000</p>
+                </div>
+              </article>
+            </div>
+
+            <!-- Card Perfumery 2 -->
+            <div class="col-sm-6 col-lg-4">
+              <article class="product-card" aria-label="Produk: Eau de Parfum Brume">
+                <div class="product-card-img-wrap">
+                  <img
+                    src="https://placehold.co/800x600?text=Lumidh+Perfume+2"
+                    alt="Botol parfum Brume 50ml dari koleksi Lumidh Fragrance"
+                    class="product-card-img"
+                    width="800"
+                    height="600"
+                    loading="lazy"
+                  />
+                  <div class="product-card-overlay">
+                    <a href="#kontak" class="btn lmh-btn-ghost" role="button">Lihat Detail</a>
+                  </div>
+                </div>
+                <div class="product-card-body">
+                  <p class="product-category">Perfumery</p>
+                  <h4 class="product-name">Brume EdP 50ml</h4>
+                  <p class="product-price">Rp 1.750.000</p>
+                </div>
+              </article>
+            </div>
+
+            <!-- Card Perfumery 3 -->
+            <div class="col-sm-6 col-lg-4">
+              <article class="product-card" aria-label="Produk: Eau de Parfum Cinere">
+                <div class="product-card-img-wrap">
+                  <img
+                    src="https://placehold.co/800x600?text=Lumidh+Perfume+3"
+                    alt="Botol parfum Cinere 100ml dari koleksi Lumidh Fragrance"
+                    class="product-card-img"
+                    width="800"
+                    height="600"
+                    loading="lazy"
+                  />
+                  <div class="product-card-overlay">
+                    <a href="#kontak" class="btn lmh-btn-ghost" role="button">Lihat Detail</a>
+                  </div>
+                </div>
+                <div class="product-card-body">
+                  <p class="product-category">Perfumery</p>
+                  <h4 class="product-name">Cinere EdP 100ml</h4>
+                  <p class="product-price">Rp 2.150.000</p>
+                </div>
+              </article>
+            </div>
+
+          </div><!-- /row perfumery -->
+        </div><!-- /category-block perfumery -->
+
+      </div><!-- /container -->
+    </section>
+
+    <!-- ----------------------------------------------------------
+         NEWSLETTER SECTION
+    ---------------------------------------------------------- -->
+    <section
+      id="kontak"
+      class="newsletter-section"
+      aria-labelledby="newsletter-heading"
+    >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center">
+            <span class="section-label">Newsletter</span>
+            <h2 id="newsletter-heading" class="section-title mt-3">
+              Hadir Lebih Awal.<br />Rasakan Lebih Dalam.
+            </h2>
+            <p class="body-text mt-3">
+              Daftarkan email Anda untuk mendapat akses awal ke koleksi baru
+              dan cerita di balik setiap karya Lumidh.
+            </p>
+
+            <!-- Form newsletter -->
+            <form
+              id="newsletterForm"
+              class="newsletter-form mt-5"
+              novalidate
+              aria-label="Formulir berlangganan newsletter Lumidh"
+            >
+              <div class="newsletter-input-group">
+                <label for="nlEmail" class="visually-hidden">Alamat email Anda</label>
+                <input
+                  type="email"
+                  id="nlEmail"
+                  name="email"
+                  class="form-control nl-input"
+                  placeholder="email@anda.com"
+                  autocomplete="email"
+                  aria-required="true"
+                  aria-describedby="nlEmailError"
+                />
+                <button
+                  type="submit"
+                  id="nlSubmitBtn"
+                  class="btn lmh-btn-primary nl-btn"
+                  aria-label="Subscribe newsletter"
+                >
+                  Subscribe
+                </button>
+              </div>
+              <!-- Pesan error -->
+              <div
+                id="nlEmailError"
+                class="nl-error mt-2"
+                role="alert"
+                aria-live="polite"
+              ></div>
+              <!-- Pesan sukses -->
+              <div
+                id="nlSuccess"
+                class="nl-success mt-3 d-none"
+                role="status"
+                aria-live="polite"
+              ></div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main><!-- /main -->
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="site-footer" aria-label="Footer Lumidh">
+    <div class="container">
+      <div class="row gy-5 align-items-start">
+
+        <!-- Brand kolom -->
+        <div class="col-md-4">
+          <p class="footer-brand">Lumidh</p>
+          <p class="footer-tagline mt-2">
+            Fashion &amp; Fragrance.<br />Tenang. Tahan waktu. Anda.
+          </p>
+        </div>
+
+        <!-- Navigasi footer -->
+        <div class="col-md-4">
+          <p class="footer-col-title">Navigasi</p>
+          <nav aria-label="Navigasi footer Lumidh">
+            <ul class="list-unstyled footer-nav mt-2">
+              <li><a href="#beranda" class="footer-link">Home</a></li>
+              <li><a href="#koleksi" class="footer-link">Koleksi</a></li>
+              <li><a href="#cerita" class="footer-link">Cerita</a></li>
+              <li><a href="#kontak" class="footer-link">Kontak</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <!-- Sosial media -->
+        <div class="col-md-4">
+          <p class="footer-col-title">Ikuti Kami</p>
+          <nav aria-label="Media sosial Lumidh" class="mt-2">
+            <ul class="list-unstyled d-flex gap-3">
+              <li>
+                <a
+                  href="#"
+                  class="footer-social"
+                  aria-label="Instagram Lumidh"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="bi bi-instagram" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="footer-social"
+                  aria-label="Pinterest Lumidh"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="bi bi-pinterest" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="footer-social"
+                  aria-label="TikTok Lumidh"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <i class="bi bi-tiktok" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+      </div><!-- /row -->
+
+      <!-- Bottom bar -->
+      <div class="footer-bottom mt-5 pt-4">
+        <p class="footer-copy mb-0">
+          &copy; <span id="copyrightYear"></span> Lumidh. Hak cipta dilindungi.
+        </p>
+      </div>
+
+    </div><!-- /container -->
+  </footer>
+
+  <!-- Back-to-Top -->
+  <button
+    id="backToTop"
+    class="back-to-top"
+    aria-label="Kembali ke atas halaman"
+    title="Kembali ke atas"
+  >
+    <i class="bi bi-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <!-- ============================================================
+       SCRIPTS
+  ============================================================ -->
+  <!-- Bootstrap 5.3 JS Bundle via jsDelivr -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc4s9bIOgUxi8T/jzmv9a3uBBCGMTbOH5oKHqWFqkWFH"
+    crossorigin="anonymous"
+  ></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
